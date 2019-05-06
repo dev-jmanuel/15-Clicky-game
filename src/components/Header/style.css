@@ -15,7 +15,10 @@ h1{
 	color: #c5bfb5;
 	position: absolute;
 	top: -2vh;
-	right: 47vh;
+	/* for windows */
+	/* right: 47vh; */
+	/* for mac */
+	right: 23vh;
 }
 
 h2{
