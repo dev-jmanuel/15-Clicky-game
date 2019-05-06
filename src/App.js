@@ -14,39 +14,28 @@ class App extends Component {
     score: 0
   };
 
+  // onClick event function
   imageClick = event => {
-    const current = event.target.alt;
-    const selected =
-      this.state.clicked.indexOf(current) > -1;
-
-    if (selected) {
-      this.setState({
-        employee: this.state.employee.sort(function(a, b) {
-          return 0.5 - Math.random();
-        }),
-        clicked: [],
-        score: 0
-      });
-        alert("You lose. Play again?");
-
-    } else {
+    
+    // if obj is in clicked arr, indexof will return 0-14 (true), else return -1 (false)
+    const current = event.target.alt; 
+    const isAlreadyClicked = this.state.clicked.indexOf(current) > -1;
+    
+    // score function: re-sort employees; add obj into clicked arr; increase score
+    if (isAlreadyClicked === false) {
       this.setState(
         {
-          employee: this.state.employee.sort(function(a, b) {
-            return 0.5 - Math.random();
-          }),
-          clicked: this.state.clicked.concat(
-            current
-          ),
+          employee: this.state.employee.sort(() => 0.5 - Math.random()),
+          clicked: this.state.clicked.concat(current),
           score: this.state.score + 1
         },
+
+        // win function: reset state when score reaches 15; send win alert
         () => {
           if (this.state.score === 15) {
-            alert("Yay! You Win!");
+            alert("Congratulations, you win");
             this.setState({
-              employee: this.state.employee.sort(function(a, b) {
-                return 0.5 - Math.random();
-              }),
+              employee: this.state.employee.sort(() => 0.5 - Math.random()),
               clicked: [],
               score: 0
             });
@@ -54,8 +43,19 @@ class App extends Component {
         }
       );
     }
+
+    // lose function: reset state; send lose alert
+    if (isAlreadyClicked === true) {
+      this.setState({
+        employee: this.state.employee.sort(() => 0.5 - Math.random()),
+        clicked: [],
+        score: 0
+      });
+      alert("Failure of any kind is failure   -D.Schrute");
+    } 
   };
 
+  // render components
   render() {
     return (
       <React.Fragment>
