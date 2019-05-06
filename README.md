@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Clicky Game
 
-## Available Scripts
+The Clicky Game is a react application game with characters from a popular tv show, "The Office".
 
-In the project directory, you can run:
+## Table of Contents:
 
-### `npm start`
+* [Getting Started](#getting-started)
+* [Architecture](#architecture)
+* [Bugs](#bugs)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started <a name="getting-started"></a>
+To install, run the following codes in your Terminal/Bash window:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```bash
+git clone https://github.com/joshespr/15-Clicky-game.git
+```
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To start the application on your localhost, run:
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Architecture <a name="architecture"></a>
+This application is built with React (HTML, JSX, JS, CSS)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Bugs <a name="bugs"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Score positioning is different for mac and windows
 
-### `npm run eject`
+<!-- ## Change Log
+Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits and Collaborations
+Give credit (and a link) to other people or resources that helped you build this application.  -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- https://guides.github.com/features/wikis/ -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+--- 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Author**: Joshua Manuel  
+**License**: MIT 
+**Version**: 0.9.3
