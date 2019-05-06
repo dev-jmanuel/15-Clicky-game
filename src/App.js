@@ -30,7 +30,7 @@ class App extends Component {
           score: this.state.score + 1
         },
 
-        // win function: reset state when score reaches 15; send win alert
+        // win function:  send win alert; reset state when score reaches 15
         () => {
           if (this.state.score === 15) {
             alert("Congratulations, you win");
@@ -51,7 +51,7 @@ class App extends Component {
         clicked: [],
         score: 0
       });
-      alert("Failure of any kind is failure   -D.Schrute");
+      alert("You lose. Play again?");
     } 
   };
 
