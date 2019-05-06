@@ -4,7 +4,7 @@ import "./style.css";
 function Navbar() {
     return (
         <nav className="navbar navbar-default navbar-fixed-top">
-            <div className="instructions">"Click every employee to win the game, but DON'T click them more than once" - Wayne Gretzky" -Michael Scott</div>
+            <div className="instructions">"Click every employee to win, but DON'T click them more than once" -Wayne Gretzky" -Michael Scott</div>
         </nav>
 
     );

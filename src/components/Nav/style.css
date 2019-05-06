@@ -3,13 +3,11 @@
     background: #333;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     font-size: 24px;
-    padding: 10px 20vh;
-    height: 8vh;
+    padding: 15px 20vh 20px;
 }
 
 .instructions {
     text-align: center;
     margin: auto;
     color: #ECEFF1;
-    
 }
