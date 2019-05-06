@@ -7,3 +7,13 @@
   border: solid 8px white;
 }
 
+.card:hover {
+  width: 200px;
+  height: 150px;
+  margin: 15px 45px;
+  box-shadow: 0 6px 12px #999, 0 6px 12px #999;
+  overflow: hidden;
+  border: solid 8px white;
+  transition: .2s;
+
+}
